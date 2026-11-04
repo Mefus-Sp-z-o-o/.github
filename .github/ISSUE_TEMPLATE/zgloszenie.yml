@@ -1,0 +1,30 @@
+name: Zgłoszenie
+description: Coś nie działa albo czegoś brakuje (opisz własnymi słowami)
+title: "Krótko, zwykłym językiem: co nie działa albo czego brakuje"
+body:
+  - type: textarea
+    id: co
+    attributes:
+      label: Co nie działa albo czego brakuje?
+      description: Własnymi słowami, tak jak powiedziałbyś to osobie z zespołu.
+    validations:
+      required: true
+  - type: input
+    id: gdzie
+    attributes:
+      label: Gdzie to widać?
+      description: Strona, ekran albo adres.
+  - type: dropdown
+    id: pilnosc
+    attributes:
+      label: Jak pilne?
+      options:
+        - Wszystko stoi (produkcja)
+        - Przeszkadza, ale da się pracować
+        - Kiedyś, bez pośpiechu
+    validations:
+      required: true
+  - type: textarea
+    id: zrzut
+    attributes:
+      label: Zrzut ekranu albo przykład
